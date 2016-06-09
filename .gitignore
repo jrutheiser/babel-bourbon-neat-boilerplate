@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Build
+.sass-cache
+node_modules
+
+# Distribution
+dist/*
+!dist/.gitkeep
