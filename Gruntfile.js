@@ -40,7 +40,8 @@ module.exports = function(grunt) {
       images: {
         files: 'src/assets/<%= sitePaths.images %>/**/*.{png,jpg,jpeg,gif,webp,svg}',
         tasks: [
-          'copy:dist'
+          'copy:dist',
+          'imagemin:dist'
         ]
       },
       scripts: {
@@ -146,9 +147,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'dist/assets/<%= sitePaths.styles %>',
+          cwd: 'dist/assets/<%= sitePaths.images %>',
           src: ['**/*.{png,jpg,gif,svg}'],
-          dest: './'
+          dest: 'dist/assets/<%= sitePaths.images %>'
         }]
       }
     },
@@ -180,6 +181,7 @@ module.exports = function(grunt) {
     'sass:dist',
     'assemble:dist',
     'copy:dist',
+    'imagemin:dist',
     'usebanner:dist'
   ]);
 
