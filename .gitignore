@@ -10,4 +10,4 @@ node_modules
 
 # Distribution
 dist/*
-!dist/.gitkeep
+!dist/.gitignore
