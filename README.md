@@ -1,2 +1,2 @@
-## ES6/Bourbon/Neat Boilerplate
+## Babel/Bourbon/Neat Grunt Boilerplate
 
