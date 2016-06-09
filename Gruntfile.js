@@ -2,8 +2,6 @@
 
 module.exports = function(grunt) {
 
-  require('time-grunt')(grunt);
-
   var sitePaths = {
     fonts: 'fonts',
     images: 'images',
