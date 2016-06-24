@@ -60,7 +60,7 @@ module.exports = function(grunt) {
         ]
       },
       templates: {
-        files: 'src/assets/<%= sitePaths.templates %>/**/*.hbs',
+        files: 'src/<%= sitePaths.templates %>/**/*.hbs',
         tasks: [
           'assemble'
         ]
@@ -69,11 +69,13 @@ module.exports = function(grunt) {
 
     browserify: {
       options: {
-        transform: [['babelify', { presets: ['es2015']}]],
+        transform: [['babelify', { presets: ['es2015'] }]],
       },
       dist: {
-        src: ['src/assets/<%= sitePaths.scripts %>/index.js'],
-        dest: 'dist/assets/<%= sitePaths.scripts %>/bundle.js'
+        files: [{
+          src: ['src/assets/<%= sitePaths.scripts %>/index.js'],
+          dest: 'dist/assets/<%= sitePaths.scripts %>/bundle.js'
+        }]
       }
     },
 
@@ -155,7 +157,7 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      dist: ['dist/*', '!dist/.gitignore']
+      dist: ['dist']
     }
   });
 
