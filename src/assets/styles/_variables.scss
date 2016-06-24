@@ -2,18 +2,21 @@
 $color-white: #ffffff;
 $color-black: #000000;
 
-
 // Font weights
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-normal: $font-weight-regular; // alias
-$font-weight-book: $font-weight-regular;   // alias
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-normal: $fw-regular; // alias
+$fw-book: $fw-regular;   // alias
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
 
+// Media Query Sizes
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
 
 // Fonts
-$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
